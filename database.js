@@ -8,6 +8,11 @@ const pool = new Pool({
   password: config.get("password"),
   host: "127.0.0.1",
   database: "todo_pern_app",
+  ssl: true
 });
+
+pool.connect(() => {
+  console.log("connected")
+})
 
 export default pool;
