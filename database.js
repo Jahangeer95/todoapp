@@ -6,7 +6,7 @@ const { Pool } = postgres;
 const pool = new Pool({
   user: "postgres",
   password: config.get("password"),
-  host: "database:5432",
+  host: "dabase:5432",
   database: "todo_pern_app",
 });
 
