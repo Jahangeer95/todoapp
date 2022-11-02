@@ -13,7 +13,7 @@ const router = Router();
 router.post("/", getUser);
 // greet route
 router.get("/", (req, res) => {
-  res.send(`<b style= color:brown;>Welcome to to todo app<b/>`);
+  res.send("Welcome to to todo app");
 });
 // Create todos , here user_id is uased as params
 router.post("/todos/:id", createTodos);

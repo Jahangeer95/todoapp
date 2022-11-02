@@ -7,10 +7,13 @@ import { error } from "./middlewares/error.js";
 
 const app = express();
 
+process.env.NODE_ENV = config.get("environment");
+
 app.use(cors());
 app.use(express.json());
 
 prod(app);
+
 app.use("/", router);
 app.use(error);
 
