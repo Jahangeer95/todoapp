@@ -19,6 +19,6 @@ app.use(error);
 
 let port = config.get("port") || 8000;
 
-app.listen(port, () => {
+app.listen(8080, () => {
   console.log(`Server has started has on port ${port}....`);
 });
