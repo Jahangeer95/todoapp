@@ -17,7 +17,7 @@ prod(app);
 app.use("/", router);
 app.use(error);
 
-let port = config.get("port") || 8000;
+let port = 8000;
 
 app.listen(port, () => {
   console.log(`Server has started has on port ${port}....`);
